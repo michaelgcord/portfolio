@@ -1,7 +1,8 @@
 "use client";
 
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
-import { useEffect, useState, useRef } from 'react'
+import { useEffect, useState, useRef } from 'react';
+import Image from 'next/image';
 
 const Home = () => {
   const [isDarkMode, setDarkMode] = useState(false);
@@ -72,14 +73,31 @@ const Home = () => {
       </div>
       <div className="left"></div>
       <div className="main">
-        <img src="profile-pic.jpeg" className="profile-pic"/>
+        <Image 
+          src="/profile-pic.jpeg"
+          className="profile-pic"
+          width={200}
+          height={200}
+          alt='profile'
+        />
         <div className={`profile-name ${isDarkMode ? 'dark-header' : ''}`}>Michael Cordero</div>
         <div>
           <a href="https://github.com/michaelgcord">
-            <img className="github-icon" src={isDarkMode ? 'github-white.png' : 'github.png'} alt="github" />
+            <Image 
+              src={isDarkMode ? '/github-white.png' : '/github.png'} 
+              width={42}
+              height={42}
+              alt="github" 
+            />
           </a>
           <a href="https://www.linkedin.com/in/michael-cordero-213b0a202/">
-            <img className="linkedin-icon" src={isDarkMode ? 'linkedin-white.png' : 'linkedin.png'} alt="linkedin" />
+            <Image 
+              className="linkedin-icon" 
+              src={isDarkMode ? '/linkedin-white.png' : '/linkedin.png'} 
+              width={32}
+              height={32}
+              alt="linkedin" 
+            />
           </a>
         </div>
         <div className={`line-break ${isDarkMode ? 'dark-line' : ''}`}></div>
@@ -144,7 +162,16 @@ const Home = () => {
                 Next.js React.js Kitsu API
               </div>
             </div>
-            <img className="card-photo" src="kigen-next.png" alt="" />
+            <div className='card-photo'>
+              <Image
+                src="/kigen-next.png" 
+                alt="kigen"
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: '100%', height: 'auto' }}                 
+              />
+            </div>
           </a>
           <a href="https://github.com/michaelgcord/chatapp-next" className={`card ${isDarkMode ? 'dark-card' : ''}`}>
             <div className={`card-content ${isDarkMode ? 'dark' : ''}`}>
@@ -156,7 +183,16 @@ const Home = () => {
                   Next.js React.js
                 </div>
               </div>
-              <img className="card-photo" src="chatapp-next.png" alt="" />          
+              <div className='card-photo'>
+                <Image 
+                  src="/chatapp-next.png" 
+                  alt="chatapp"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  style={{ width: '100%', height: 'auto' }}                   
+                />          
+              </div>              
           </a>
           <a href="https://michaelgcord.github.io/Connect-4/" className={`card ${isDarkMode ? 'dark-card' : ''}`}>
             <div className={`card-content ${isDarkMode ? 'dark' : ''}`}>
@@ -168,7 +204,16 @@ const Home = () => {
                 HTML CSS Javascript
               </div>
             </div>
-            <img className="card-photo" src="connect4.png" alt="" />
+            <div className='card-photo'>
+              <Image
+                src="/connect4.png" 
+                alt="connect-4"
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: '100%', height: 'auto' }} 
+              />
+            </div>
           </a>
         </div>
         <div className="spacer"></div>
