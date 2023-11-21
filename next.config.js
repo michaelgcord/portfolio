@@ -3,10 +3,12 @@
 /**
  * @type {import('next').NextConfig}
  **/
+ 
 const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  assetPrefix: './',
     // /**
     //  * Enable static exports for the App Router.
     //  *
