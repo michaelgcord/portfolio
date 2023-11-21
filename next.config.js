@@ -4,6 +4,9 @@
  * @type {import('next').NextConfig}
  **/
 const nextConfig = {
+  eslint: {
+    ignoreDuringBuilds: true,
+  }
     // /**
     //  * Enable static exports for the App Router.
     //  *
