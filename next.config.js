@@ -8,7 +8,6 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  assetPrefix: './',
     // /**
     //  * Enable static exports for the App Router.
     //  *
@@ -21,7 +20,7 @@ const nextConfig = {
     //  *
     //  * @see https://nextjs.org/docs/app/api-reference/next-config-js/basePath
     //  */
-    // basePath: "/portfolio",
+    basePath: "/portfolio",
   
     // /**
     //  * Disable server-based image optimization. Next.js does not support
