@@ -84,7 +84,7 @@ const Home = () => {
         <div>
           <a href="https://github.com/michaelgcord">
             <Image 
-              src={isDarkMode ? '/portfolio/github-white.png' : '/github.png'} 
+              src={isDarkMode ? '/portfolio/github-white.png' : '/portfolio/github.png'} 
               width={42}
               height={42}
               alt="github" 
@@ -93,7 +93,7 @@ const Home = () => {
           <a href="https://www.linkedin.com/in/michael-cordero-213b0a202/">
             <Image 
               className="linkedin-icon" 
-              src={isDarkMode ? '/portfolio/linkedin-white.png' : '/linkedin.png'} 
+              src={isDarkMode ? '/portfolio/linkedin-white.png' : '/portfolio/linkedin.png'} 
               width={32}
               height={32}
               alt="linkedin" 
