@@ -74,7 +74,7 @@ const Home = () => {
       <div className="left"></div>
       <div className="main">
         <Image 
-          src="/profile-pic.jpeg"
+          src="/portfolio/profile-pic.jpeg"
           className="profile-pic"
           width={200}
           height={200}
@@ -84,7 +84,7 @@ const Home = () => {
         <div>
           <a href="https://github.com/michaelgcord">
             <Image 
-              src={isDarkMode ? '/github-white.png' : '/github.png'} 
+              src={isDarkMode ? '/portfolio/github-white.png' : '/github.png'} 
               width={42}
               height={42}
               alt="github" 
@@ -93,7 +93,7 @@ const Home = () => {
           <a href="https://www.linkedin.com/in/michael-cordero-213b0a202/">
             <Image 
               className="linkedin-icon" 
-              src={isDarkMode ? '/linkedin-white.png' : '/linkedin.png'} 
+              src={isDarkMode ? '/portfolio/linkedin-white.png' : '/linkedin.png'} 
               width={32}
               height={32}
               alt="linkedin" 
@@ -164,7 +164,7 @@ const Home = () => {
             </div>
             <div className='card-photo'>
               <Image
-                src="/kigen-next.png" 
+                src="/portfolio/kigen-next.png" 
                 alt="kigen"
                 width={0}
                 height={0}
@@ -185,7 +185,7 @@ const Home = () => {
               </div>
               <div className='card-photo'>
                 <Image 
-                  src="/chatapp-next.png" 
+                  src="/portfolio/chatapp-next.png" 
                   alt="chatapp"
                   width={0}
                   height={0}
@@ -206,7 +206,7 @@ const Home = () => {
             </div>
             <div className='card-photo'>
               <Image
-                src="/connect4.png" 
+                src="/portfolio/connect4.png" 
                 alt="connect-4"
                 width={0}
                 height={0}
