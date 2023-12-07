@@ -306,6 +306,10 @@ a {
   background-color: #242424;
 }
 
+.light-container {
+  background-color: #ffffff;
+}
+
 .dark {
   color: #ffffff; 
 }

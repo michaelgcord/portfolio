@@ -8,8 +8,8 @@ const Home = () => {
   const [isDarkMode, setDarkMode] = useState(false);
   const [isItemSelected, setIsItemSelected] = useState([true, false, false]);
   const [barPosition, setBarPosition] = useState('0%');
-  const [color1, setColor1] = useState('#373737');
-  const [color2, setColor2] = useState('#919090');
+  const [color1, setColor1] = useState('#373737'); // main color for side content
+  const [color2, setColor2] = useState('#919090'); // secondary color for side content when hovered
 
   const onScroll = (event:any) => {
     if (window.scrollY >= 0 && window.scrollY <= 319) {
@@ -26,15 +26,18 @@ const Home = () => {
     }    
   }
 
+  // explicitly set the css for light mode to make website compatible with dark mode on mobile
   useEffect(() => {
     if (isDarkMode) {
       setColor1('#ffffff');
       setColor2('#919090');
+      document.querySelector('body')?.classList.remove('light-container');
       document.querySelector('body')?.classList.add('dark-container');
     } else {
       setColor1('#373737');
       setColor2('#919090');
       document.querySelector('body')?.classList.remove('dark-container');
+      document.querySelector('body')?.classList.add('light-container');
     }
   }, [isDarkMode])
 
