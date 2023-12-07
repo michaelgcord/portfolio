@@ -72,7 +72,7 @@ const Home = () => {
           moonColor={'white'}
         />
         <div className={`vline-break ${isDarkMode ? 'dark-line' : ''}`}></div>
-        <div className={`resume ${isDarkMode ? 'dark' : ''}`}>Resume</div>
+        <div className={`resume ${isDarkMode ? 'dark' : 'light'}`}>Resume</div>
       </div>
       <div className="left"></div>
       <div className="main">
@@ -105,7 +105,7 @@ const Home = () => {
         </div>
         <div className={`line-break ${isDarkMode ? 'dark-line' : ''}`}></div>
         <div className={`header ${isDarkMode ? 'dark-header' : ''}`}>Hello, my name is</div>
-        <div className={`body ${isDarkMode ? 'dark' : ''}`}>
+        <div className={`body ${isDarkMode ? 'dark' : 'light'}`}>
           <span className={isDarkMode ? 'michael-dark' : 'michael-light'}>Michael Cordero</span>
           . I’m a software engineer located in the bay area. Currently, I am 
           looking for opportunities to build and grow my skill set in full stack engineering. 
@@ -114,11 +114,11 @@ const Home = () => {
         </div>
         <div className={`line-break ${isDarkMode ? 'dark-line' : ''}`}></div>
         <div className={`header ${isDarkMode ? 'dark-header' : ''}`}>Experience</div>
-        <div className={`work-item ${isDarkMode ? 'dark' : ''}`}>
+        <div className={`work-item ${isDarkMode ? 'dark' : 'light'}`}>
           <div className="date">Aug 2021 — Oct 2022</div>
           <div className="item">
             <div className="work-header">Software Engineer @ <span className={isDarkMode ? 'highlight-dark' : 'highlight-light'}><a href="https://www.care.coach/">care.coach</a></span></div>
-            <div className={`work-body ${isDarkMode ? 'dark' : ''}`}>
+            <div className={`work-body ${isDarkMode ? 'dark' : 'light'}`}>
               Developed highly robust code to improve UI and UX of system dashboard and 
               refactor legacy code to React. Designed and built a web application to demo
               care.coach's latest machine learning AI project—FARA. Worked on a multitude
@@ -131,7 +131,7 @@ const Home = () => {
           <div className="date">Sep 2019 — Apr 2020</div>
           <div className="item">
             <div className="work-header">Computer Engineer Intern @ <span className={isDarkMode ? 'highlight-dark' : 'highlight-light'}><a href="https://ece.ucdavis.edu/">UC Davis Computer Engineering Depart.</a></span></div>
-            <div className={`work-body ${isDarkMode ? 'dark' : ''}`}>
+            <div className={`work-body ${isDarkMode ? 'dark' : 'light'}`}>
               Collaborated with a team of student engineers to build a mini automatic racecar to
               compete at the annual UC Davis NATCAR competition — from designing the pcb, to 
               assembling the car, and finally to writing the code.
@@ -139,11 +139,11 @@ const Home = () => {
             <div className="work-footer">Altium Robotics Python</div>
           </div>
         </div>
-        <div className={`work-item ${isDarkMode ? 'dark' : ''}`}>
+        <div className={`work-item ${isDarkMode ? 'dark' : 'light'}`}>
           <div className="date">May 2019 — Aug 2020</div>
           <div className="item">
             <div className="work-header">Software Engineer Intern @ <span className={isDarkMode ? 'highlight-dark' : 'highlight-light'}><a href="https://bae.ucdavis.edu/">UC Davis Biological Engineering Depart.</a></span></div>
-            <div className={`work-body ${isDarkMode ? 'dark' : ''}`}>
+            <div className={`work-body ${isDarkMode ? 'dark' : 'light'}`}>
               Helped improve the local farms at UC Davis by designing and coding an algorithmic 
               irrigation system that would automatically water crops based on their criteria, and 
               presented the prototype at the annual engineering showcase event.
@@ -155,8 +155,8 @@ const Home = () => {
         <div className={`header ${isDarkMode ? 'dark-header' : ''}`}>Projects</div>
         <div className="project-container">
           <a href="https://github.com/michaelgcord/kigen-next" className={`card ${isDarkMode ? 'dark-card' : ''}`}>
-            <div className={`card-content ${isDarkMode ? 'dark' : ''}`}>
-              <div className={`card-header ${isDarkMode ? 'dark' : ''}`}>Kigen</div>
+            <div className={`card-content ${isDarkMode ? 'dark' : 'light'}`}>
+              <div className={`card-header ${isDarkMode ? 'dark' : 'light'}`}>Kigen</div>
               <div className="card-body">
                 A search engine that crafts a randomized list of anime based on
                 selected genre.
@@ -177,8 +177,8 @@ const Home = () => {
             </div>
           </a>
           <a href="https://github.com/michaelgcord/chatapp-next" className={`card ${isDarkMode ? 'dark-card' : ''}`}>
-            <div className={`card-content ${isDarkMode ? 'dark' : ''}`}>
-                <div className={`card-header ${isDarkMode ? 'dark' : ''}`}>Chatbox</div>
+            <div className={`card-content ${isDarkMode ? 'dark' : 'light'}`}>
+                <div className={`card-header ${isDarkMode ? 'dark' : 'light'}`}>Chatbox</div>
                 <div className="card-body">
                   What is a dev portfolio without a chat app? This is my version. Be amazed.
                 </div>
@@ -198,8 +198,8 @@ const Home = () => {
               </div>              
           </a>
           <a href="https://michaelgcord.github.io/Connect-4/" className={`card ${isDarkMode ? 'dark-card' : ''}`}>
-            <div className={`card-content ${isDarkMode ? 'dark' : ''}`}>
-              <div className={`card-header ${isDarkMode ? 'dark' : ''}`}>Connect 4</div>
+            <div className={`card-content ${isDarkMode ? 'dark' : 'light'}`}>
+              <div className={`card-header ${isDarkMode ? 'dark' : 'light'}`}>Connect 4</div>
               <div className="card-body">
                 My first web app ever. I didn't even know about frameworks back then!
               </div>
