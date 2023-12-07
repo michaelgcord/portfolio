@@ -127,7 +127,7 @@ const Home = () => {
             <div className="work-footer">React Javascript Django MySQL</div>
           </div>
         </div>
-        <div className={`work-item ${isDarkMode ? 'dark-header' : ''}`}>
+        <div className={`work-item ${isDarkMode ? 'dark' : 'light'}`}>
           <div className="date">Sep 2019 — Apr 2020</div>
           <div className="item">
             <div className="work-header">Computer Engineer Intern @ <span className={isDarkMode ? 'highlight-dark' : 'highlight-light'}><a href="https://ece.ucdavis.edu/">UC Davis Computer Engineering Depart.</a></span></div>
