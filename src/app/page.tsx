@@ -72,7 +72,7 @@ const Home = () => {
           moonColor={'white'}
         />
         <div className={`vline-break ${isDarkMode ? 'dark-line' : ''}`}></div>
-        <div className={`resume ${isDarkMode ? 'dark' : 'light'}`}>Resume</div>
+        <a href='/portfolio/Michael-Cordero-Resume.pdf' className={`resume ${isDarkMode ? 'dark' : 'light'}`}>Resume</a>
       </div>
       <div className="left"></div>
       <div className="main">
@@ -134,7 +134,7 @@ const Home = () => {
             <div className={`work-body ${isDarkMode ? 'dark' : 'light'}`}>
               Collaborated with a team of student engineers to build a mini automatic racecar to
               compete at the annual UC Davis NATCAR competition — from designing the pcb, to 
-              assembling the car, and finally to writing the code.
+              assembling the car, to writing the algorithm.
             </div>
             <div className="work-footer">Altium Robotics Python</div>
           </div>
@@ -176,14 +176,35 @@ const Home = () => {
               />
             </div>
           </a>
+          <a href="https://github.com/michaelgcord/dailyjournal" className={`card ${isDarkMode ? 'dark-card' : ''}`}>
+            <div className={`card-content ${isDarkMode ? 'dark' : 'light'}`}>
+                <div className={`card-header ${isDarkMode ? 'dark' : 'light'}`}>Daily Journal</div>
+                <div className="card-body">
+                  My first full stack project that let's users journal about their daily lives.
+                </div>
+                <div className="card-footer">
+                  Javascript Express.js MySQL
+                </div>
+              </div>
+              <div className='card-photo'>
+                <Image 
+                  src="/portfolio/dailyjournal.png" 
+                  alt="dailyjournal"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  style={{ width: '100%', height: '138px' }}                   
+                />          
+              </div>              
+          </a>          
           <a href="https://github.com/michaelgcord/chatapp-next" className={`card ${isDarkMode ? 'dark-card' : ''}`}>
             <div className={`card-content ${isDarkMode ? 'dark' : 'light'}`}>
                 <div className={`card-header ${isDarkMode ? 'dark' : 'light'}`}>Chatbox</div>
                 <div className="card-body">
-                  What is a dev portfolio without a chat app? This is my version. Be amazed.
+                  A simple chat app to interact with other users across the web.
                 </div>
                 <div className="card-footer">
-                  Next.js React.js
+                  Next.js React.js WebSocket
                 </div>
               </div>
               <div className='card-photo'>
@@ -197,11 +218,11 @@ const Home = () => {
                 />          
               </div>              
           </a>
-          <a href="https://michaelgcord.github.io/Connect-4/" className={`card ${isDarkMode ? 'dark-card' : ''}`}>
+          <a href="https://michaelgcord.github.io/connect-4/" className={`card ${isDarkMode ? 'dark-card' : ''}`}>
             <div className={`card-content ${isDarkMode ? 'dark' : 'light'}`}>
               <div className={`card-header ${isDarkMode ? 'dark' : 'light'}`}>Connect 4</div>
               <div className="card-body">
-                My first web app ever. I didn't even know about frameworks back then!
+                My first web app ever - coding one of favorite childhood board games.
               </div>
               <div className="card-footer">
                 HTML CSS Javascript
