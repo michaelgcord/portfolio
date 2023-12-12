@@ -180,7 +180,7 @@ const Home = () => {
             <div className={`card-content ${isDarkMode ? 'dark' : 'light'}`}>
                 <div className={`card-header ${isDarkMode ? 'dark' : 'light'}`}>Daily Journal</div>
                 <div className="card-body">
-                  My first full stack project that let's users journal about their daily lives.
+                  My first full stack project that lets users journal about their daily lives.
                 </div>
                 <div className="card-footer">
                   Javascript Express.js MySQL
