@@ -117,7 +117,7 @@ const Home = () => {
         <div className={`work-item ${isDarkMode ? 'dark' : 'light'}`}>
           <div className="date">Aug 2021 — Oct 2022</div>
           <div className="item">
-            <div className="work-header">Software Engineer @ <span className={isDarkMode ? 'highlight-dark' : 'highlight-light'}><a href="https://www.care.coach/">care.coach</a></span></div>
+            <div className="work-header">Full Stack Software Engineer @ <span className={isDarkMode ? 'highlight-dark' : 'highlight-light'}><a href="https://www.care.coach/">care.coach</a></span></div>
             <div className={`work-body ${isDarkMode ? 'dark' : 'light'}`}>
               Developed highly robust code to improve UI and UX of system dashboard and 
               refactor legacy code to React. Designed and built a web application to demo
